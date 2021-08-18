@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container-produto {
+  width: 550px;
+  display: flex;
+}
+
+.container-img {
+  width: 200px;
+  height: 200px;
+  border: 2px #ccc solid;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container-text h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.price{
+  color: #ccc;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.seling-price{
+  color: black;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
