@@ -7,7 +7,6 @@ function Produto({carrinho}) {
   return (
     <div className='container-produto'>
         
-
       <div className='container-img'>
         <img src={carrinho.imageUrl} alt='' />
       </div>

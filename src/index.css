@@ -1,59 +1,213 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.titulo {
+    border-bottom: 1px #ccc solid;
+    margin-bottom: 20px;
 }
 
 .container-produto {
-  width: 550px;
-  display: flex;
+    width: 550px;
+    display: flex;
+    margin-bottom: 10px;
 }
 
 .container-img {
-  width: 200px;
-  height: 200px;
-  border: 2px #ccc solid;
+    width: 200px;
+    height: 200px;
+    border: 2px #ccc solid;
 }
 
 .container-img img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .container-text {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .container-text h3 {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: black;
 }
 
-.price{
-  color: #ccc;
-  font-size: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+.price {
+    color: #ccc;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
-.seling-price{
-  color: black;
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+.seling-price {
+    color: black;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.container-total {
+    display: flex;
+    align-items: center;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    height: 100px;
+}
+
+#total {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-right: 400px;
+}
+
+#valor-total {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.container-botao {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-botao .botao {
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #3b74f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-botao .botao a {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.container-frete {
+    width: 600px;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.frete {
+    width: 80%;
+    height: 30px;
+    background-color: #c7ffa6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+.frete span {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #70c76d;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0;
+    }
+
+    .titulo {
+        padding-left: 10px;
+    }
+
+    .container-produto {
+        width: 100vw;
+        padding-left: 10px;
+    }
+
+    .container-img {
+        width: 40%;
+        height: 150px;
+    }
+
+    .container-text {
+        width: 60%;
+    }
+
+    .container-total {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #total {
+        margin-right: 0;
+        padding-left: 10px;
+    }
+
+    #valor-total {
+        padding-right: 10px;
+    }
+
+    .container-botao {
+        display: flex;
+        justify-content: center;
+    }
+    .container-botao .botao {
+        width: 90vw;
+    }
+
+    .container-frete {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .frete {
+        width: 80%;
+        height: 30px;
+        background-color: #c7ffa6;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .frete span {
+        font-size: 13px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        color: #70c76d;
+    }
 }
